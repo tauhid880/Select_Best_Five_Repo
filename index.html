@@ -206,6 +206,94 @@
                 </div>
             </div>
         </section>
+
+        <!-- aside -->
+        <aside class="lg:w-1/4 w-fit md:w-auto mx-auto lg:mx-0">
+            <!-- 1st-aside -->
+            <div class="bg-black py-6 lg:mb-7 my-7 lg:my-0 rounded h-96">
+
+                <div class="text-center py-3">
+                    <h2 class="text-2xl font-semibold">Selected Players - <span id="count">0</span></h2>
+                    <img class="mx-auto my-2 animate-pulse" src="images/Ureg-Ureg Marker.png" alt="">
+                </div>
+
+                <!-- order-list -->
+                <div>
+                    <!-- ol -->
+                    <ol id="ol" class="list-decimal lg:ml-14 md:ml-48 ml-14">
+                    </ol>
+                </div>
+            </div>
+
+            <!-- 2nd-aside -->
+            <div class="bg-black py-6 rounded">
+
+                <div class="text-center py-3">
+                    <h2 class="text-2xl font-semibold">Budget</h2>
+                    <img class="mx-auto animate-pulse my-2" src="images/Ureg-Ureg Marker.png" alt="">
+                </div>
+
+                <!-- calculations -->
+                <div class="p-4">
+
+                    <!-- per-player -->
+                    <div class="flex justify-between items-center">
+                        <p class="text-zinc-400 pr-10 lg:pr-0">Per Player: </p>
+                        <input id="per-player" class="w-36 p-2 rounded bg-black border-2 outline-0" type="number"
+                            name="" value="" placeholder="Player Amount">
+                    </div>
+
+                    <!-- cal-btn -->
+                    <button onclick="calculate()"
+                        class="text-black my-5 mx-auto block uppercase py-2 px-9 bg-orange-300 hover:bg-gray-700 disabled:bg-gray-600 font-medium hover:px-16 hover:ease-in-out duration-700 rounded"
+                        type="
+                        button">Calculate</button>
+
+                    <!-- player-expenses -->
+                    <div class="mb-4 flex justify-between items-center">
+                        <p class="text-zinc-400">Player Expenses = </p>
+                        <p class="text-white cus_head text-xl">$<span id="player-expenses"
+                                class="cus_head text-xl">Amount</span></p>
+                    </div>
+
+                    <!-- manager -->
+                    <div class="mb-4 flex justify-between items-center">
+                        <p class="text-zinc-400 pr-10 lg:pr-0">Manager: </p>
+                        <input class="w-36 p-2 rounded bg-black border-2 outline-0" type="number" name="" value=""
+                            id="manager" placeholder="ManagerAmount">
+                    </div>
+
+                    <!-- coach -->
+                    <div class="flex justify-between items-center">
+                        <p class="text-zinc-400 pr-10 lg:pr-0">Coach: </p>
+                        <input class="w-36 p-2 rounded bg-black border-2 outline-0" type="number" name="" value=""
+                            id="coach" placeholder="Coach Amount">
+                    </div>
+
+                    <!-- cal-total-btn -->
+                    <button id="calculate-total"
+                        class="text-black my-5 mx-auto block uppercase py-2 px-9 bg-orange-300 hover:bg-gray-700 disabled:bg-gray-600 font-medium hover:px-14 hover:ease-in-out duration-700 rounded"
+                        type="
+                            button">Calculate Total</button>
+
+                    <!-- total -->
+                    <div class="flex justify-between items-center">
+                        <p class="text-zinc-400">Total = </p>
+                        <p class="text-orange-500 cus_head text-xl">$<span id="total"
+                                class="cus_head text-xl">Amount</span></p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+ <!-- Main section end -->
+ <!-- footer -->
+    <footer>
+        <hr class="border-zinc-700">
+        </hr>
+        <small class="p-8 text-center block">Copyright @ 2022 All Rights Reserved.</small>
+    </footer>
+    <!-- Footer section end -->
     <!-- Js Script -->
     <script src="js/utilities.js"></script>
     <script src="js/player.js"></script>
