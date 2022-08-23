@@ -17,3 +17,15 @@ function makeFloat(str) {
   const float = parseFloat(parseFloat(str).toFixed(2));
   return float;
 }
+
+// setTextValue
+function setTextValue(id, newValue) {
+  const textElementId = document.getElementById(id);
+  textElementId.innerText = newValue;
+}
+
+// setInputValue (should be into Empty)
+function setInputValue(id, empty) {
+  const inputId = document.getElementById(id);
+  inputId.value = empty;
+}
